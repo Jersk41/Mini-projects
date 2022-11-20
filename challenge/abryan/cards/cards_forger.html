@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'purisa';
+        }
+
+        @font-face {
+            font-family: purisa;
+            src: url(Purisa\ Bold.ttf);
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ffaf00, #bb02ff);
+            background-attachment: fixed;
+        }
+
+
+        .card
+        {
+            position: relative;
+            width: 1150px;
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .card:hover
+        {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+        }
+        .card-text
+        {
+            padding: 2px 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+    <img src="17 agustus-01-01.png" class="card-img-top" alt="17 agustus-01-01" style="width:100%;">
+    <div class="card-body">
+        <h4 class="card-tittle">17 Agustus 2023</h4>
+        <p class="card-text">Perjuangan yang tidak pernah berhenti dari Pejuang 
+            kemerdekaan</p>
+    </div>
+    </div>
+</body>
+</html>
