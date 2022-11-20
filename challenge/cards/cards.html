@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <title>Cards HTML CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* section{
+            width: 50%;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px; 
+        } */
+
+        .frame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            margin-top: -200px;
+            margin-left: -200px;
+            border-radius: 2px;
+            box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background: #fff;
+            color: #333;
+            font-family: 'Open Sans', Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .card {
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 1.5em;
+            box-shadow: 2px 3px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-header,
+        .card-body,
+        .card-footer {
+            padding: 0.5em 1em;
+        }
+
+        .card .card-img {
+            display: flex;
+            width: 100%;
+            height: 50%;
+            border-radius: 1.5em 1.5em 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="card">
+                <img src="https://source.unsplash.com/random/320x320?nature" alt="" class="card-img">
+                <div class="card-body">
+                    <h4 class="">Card Title</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At amet animi consequuntur commodi
+                        rerum molestiae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
