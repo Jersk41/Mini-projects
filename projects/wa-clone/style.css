@@ -7,15 +7,12 @@
 .parent{
   width:100%;
   height:100vh;
-  background:grey;
+  background:#ffffff;
   border:2px solid black;
   display:flex;
-  flex-wrap;
 }
 
 .box{
-/*   flex:1; */
-/*   width:100px; */
   border:1px solid white;
 }
 
@@ -31,7 +28,8 @@
   height:100%;
   display:flex;
   flex-direction:column;
-  justify-content:space-around;
+  justify-content:space-between;
+  box-shadow: 0px 0 4px 0 black;
 }
 
 .row{
@@ -42,6 +40,11 @@
 .col{
   display:flex;
   flex-direction:column;
+}
+
+
+#btn-status{
+  margin-top:2em;
 }
 
 .menu button{
@@ -64,10 +67,11 @@
   flex-shrink:5;
   flex-wrap:wrap;
   padding:0.5em;
+  box-shadow: 0px 0 4px 0 black;
 }
 
 .chatlist-title{
-  font-size:3em;
+  font-size:24px;
   flex:3;
   text-align:start;
 }
@@ -80,18 +84,33 @@
 }
 
 .chatlist-nav button{
-  width:3em;
-  height:3em;
-}
-
-.chat-wrapper{
-  background:lightgreen;
-  flex-grow:3;
-  width:100%;
-  height:4em;
+  width:2em;
+  height:2em;
 }
 
 .chatlist-body{
   height:75%;
   flex:3;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  overflow-y:scroll;
+}
+
+.chat-wrapper{
+  width:100%;
+  max-height:4em;
+  margin: 0 0.2em;
+  padding:0.5em;
+  flex-grow:3;
+  display:flex;
+  align-items:center;
+  background:lightgreen;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.chat-wrapper img.profile-image{
+  height:50%;
+  border-radius: 50%;
 }
