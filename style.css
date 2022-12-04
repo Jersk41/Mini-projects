@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.parent{
+  width:100%;
+  height:100vh;
+  background:grey;
+  border:2px solid black;
+  display:flex;
+  flex-wrap;
+}
+
+.box{
+/*   flex:1; */
+/*   width:100px; */
+  border:1px solid white;
+}
+
+.chat-list{
+  flex-grow:1
+}
+.box3{
+  flex-grow:2;
+}
+
+.menu{
+  flex-shrink:8;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+.row{
+  display:flex;
+  flex-direction:row;
+}
+
+.col{
+  display:flex;
+  flex-direction:column;
+}
+
+.menu button{
+  width:2em;
+  height:2em;
+  margin:0.5em;
+  text-align:center;
+}
+
+.chatlist{
+  display:flex;
+  flex-grow:1;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
+
+.chatlist-header{
+  display:flex;
+  flex-direction:row;
+  flex-shrink:5;
+  flex-wrap:wrap;
+  padding:0.5em;
+}
+
+.chatlist-title{
+  font-size:3em;
+  flex:3;
+  text-align:start;
+}
+
+.chatlist-nav{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+
+.chatlist-nav button{
+  width:3em;
+  height:3em;
+}
+
+.chat-wrapper{
+  background:lightgreen;
+  flex-grow:3;
+  width:100%;
+  height:4em;
+}
+
+.chatlist-body{
+  height:75%;
+  flex:3;
+}
